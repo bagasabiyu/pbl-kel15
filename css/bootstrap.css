@@ -1028,7 +1028,6 @@ pre code {
     -ms-flex: 0 0 25%;
     flex: 0 0 25%;
     max-width: 25%;
-    float:inline-start;
   }
   .col-md-5 {
     -ms-flex: 0 0 41.666667%;
