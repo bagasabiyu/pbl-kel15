@@ -1,14 +1,3 @@
-<?php
-
-require 'backend/conn.php';
-require 'backend/asrsHandler.php';
-if(@$_SESSION['uid'] != null)
-{
-	
-}else{
-	header('index.html');
-}
-?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -130,7 +119,7 @@ if(@$_SESSION['uid'] != null)
         .kotak {
             width: 75px;
             height: 75px;
-            //background-color: #BADA55;
+            background-color: #BADA55;
             text-align: center;
             line-height: 75px; 
             margin-left: 100px;
@@ -138,12 +127,6 @@ if(@$_SESSION['uid'] != null)
             float: left;
             transition: 1s;
         }
-		.red {
-			background-color: #FFA6A6;
-		}
-		.green {
-			background-color: #BADA55;
-		}
         .kotak:hover {
             transform: rotate(360deg);  
             border-radius: 50%;
@@ -204,22 +187,30 @@ if(@$_SESSION['uid'] != null)
     <!--Akhir Navbar-->
     <!--Control Panel-->
     <h1 class="controlpage">CONTROL PAGE</h1>
-		<!--div angka-->
-		<?php require 'backend/tablefetch.php'?>
-		<!--akhir div-->
-	
+    <?php
+            $angka = [[1,2,3,4,5,6,7,8],[9,10,11,12,13,14,15,16],[17,18,19,20,21,22,23,24],[25,26,27,28,29,30,31,32]];
+        ?>
+
+        <?php foreach( $angka as $a) : ?>
+            <?php foreach ($a as $b) : ?>
+                <div class="kotak"><?= $b; ?></div>
+            <?php endforeach; ?>
+            <div class="clear"></div>
+        <?php endforeach; ?>
+
     <!--Akhir Control Panel-->
 
     <!-- form input rak-->
 
     <h2 class="buttondanh2">Input Rak Number</h2>
-    <form action="" method="posts" style="margin-right: 20px;">
+    <form action="" style="margin-right: 20px;">
       
     <div class="row justify-content-center align-items-center h-100";>
     <div class="col col-sm-6 col-md-6 col-lg-4 col-xl-3">
+      <form action="">
     
         <div class="form-group">
-          <input type="number" name="inputAdress" class="form-control" />
+          <input type="text" class="form-control" />
         </div>
         <div class="form-group text-center">
           
@@ -227,8 +218,8 @@ if(@$_SESSION['uid'] != null)
         <div class="form-group">
           <div class="container">
             <div class="row" style="margin-top: 2rem">
-              <div class="col"><input type="submit" value="Simpan" name="simpan" class="col-8 btn btn-outline-primary btn-sm float-left"></div>
-              <div class="col"><input type="submit" value="Ambil" name="ambil" class="col-8 btn btn-outline-success btn-sm float-right"/></div>
+              <div class="col"><button class="col-8 btn btn-outline-primary btn-sm float-left">Stacking</button></div>
+              <div class="col"><button class="col-8 btn btn-outline-success btn-sm float-right">Racking</button></div>
             </div>
           </div>
         </div>
@@ -240,7 +231,7 @@ if(@$_SESSION['uid'] != null)
     </div>
   </div>
 
-    <!--akhir form input rak-->
+    <!-- form input rak-->
 
 
     <!--Footer-->
