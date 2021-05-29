@@ -2,7 +2,6 @@
 
 $adressFetch = "select * from rak ORDER BY id";
 $run = mysqli_query($conn,$adressFetch);
-echo'<tr>';
 if(mysqli_num_rows($run)>0)
 {
 	$coloumnCount=0;
@@ -11,12 +10,12 @@ if(mysqli_num_rows($run)>0)
 	{
 		if($data['status']==1)
 		{
-			$status='<td class="red">'.$data['adress'].'</td>';
+			$status='<div class="kotak red">'.$data['adress'].'</div>';
 			$coloumnCount++;
 		}
 		if($data['status']==0)
 		{
-			$status='<td class="grey">'.$data['adress'].'</td>';
+			$status='<div class="kotak green" class="green">'.$data['adress'].'</div>';
 			$coloumnCount++;
 		}
 		if($coloumnCount<5)
@@ -25,7 +24,7 @@ if(mysqli_num_rows($run)>0)
 		}
 		if($coloumnCount>=5)
 		{
-			echo $status.'</tr><tr>';
+			echo $status.'<div class="clear"></div>';
 			$coloumnCount=0;
 		}
 	}
