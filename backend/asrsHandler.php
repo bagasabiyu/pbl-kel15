@@ -2,14 +2,14 @@
 
 $err = 1;
 
-if(isset($_POST['inputSimpan']))
+if(isset($_POST['simpan']))
 {
 	$add	= $_POST['inputAdress'];
 	$stat	= 1;
 	$err	= 0;
 }
 
-if(isset($_POST['inputAmbil']))
+if(isset($_POST['ambil']))
 {
 	$add	= $_POST['inputAdress'];
 	$stat	= 0;

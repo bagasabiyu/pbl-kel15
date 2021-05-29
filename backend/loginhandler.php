@@ -4,9 +4,6 @@ if(isset($_POST['submit']))
 {
 	$user = $_POST['user'];
 	$pass = $_POST['pass'];
-
-	if(empty($user)){('username kosong');}
-	if(empty($pass)){('password kosong');}
 	
 	if(!empty($user . $pass))
 	{
@@ -18,7 +15,7 @@ if(isset($_POST['submit']))
 		{
 			session_start();
 			$_SESSION['uid'] = $row['id'];
-			header('location:control.php');
+			header('location:dashboard.php');
 		}else{
 			echo 'username atau password salah';
 		}
