@@ -2,12 +2,7 @@
 
 require 'backend/conn.php';
 require 'backend/asrsHandler.php';
-if(@$_SESSION['uid'] != null)
-{
-	
-}else{
-	header('index.html');
-}
+
 ?>
 <!doctype html>
 <html lang="en">
