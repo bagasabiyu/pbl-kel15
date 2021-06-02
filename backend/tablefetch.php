@@ -1,6 +1,6 @@
 <?php
 
-$adressFetch = "select * from rak ORDER BY id";
+$adressFetch = "SELECT * FROM rak ORDER BY id";
 $run = mysqli_query($conn,$adressFetch);
 if(mysqli_num_rows($run)>0)
 {
