@@ -28,8 +28,8 @@ require 'backend/asrsHandler.php';
 	<span>
 		<table>
 			<tr>
-				<td><input type="submit" name="inputSimpan" value="simpan"/></td>
-				<td><input type="submit" name="inputAmbil" value="ambil"/></td>
+				<td><input type="submit" name="simpan" value="simpan"/></td>
+				<td><input type="submit" name="ambil" value="ambil"/></td>
 			<tr>
 		</table>
 	</span>
