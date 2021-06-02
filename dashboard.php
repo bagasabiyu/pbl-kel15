@@ -208,7 +208,7 @@ require 'backend/asrsHandler.php';
     <!-- form input rak-->
 
     <h2 class="buttondanh2">Input Rak Number</h2>
-    <form action="" method="posts" style="margin-right: 20px;">
+    <form action="" method="post" style="margin-right: 20px;">
       
     <div class="row justify-content-center align-items-center h-100";>
     <div class="col col-sm-6 col-md-6 col-lg-4 col-xl-3">
@@ -227,7 +227,7 @@ require 'backend/asrsHandler.php';
             </div>
           </div>
         </div>
-      </form>
+     </form>
 
     <div class="text-center" style="margin-top: 4rem;" >
       <button type="button" class="btn btn-danger btn-lg">Emergency Button</button>
