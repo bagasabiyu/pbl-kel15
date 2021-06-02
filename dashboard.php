@@ -222,7 +222,7 @@ require 'backend/asrsHandler.php';
         <div class="form-group">
           <div class="container">
             <div class="row" style="margin-top: 2rem">
-              <div class="col"><input type="submit" value="Simpan" name="simpan" class="col-8 btn btn-outline-primary btn-sm float-left"></div>
+              <div class="col"><input type="submit" value="Simpan" name="simpan" class="col-8 btn btn-outline-primary btn-sm float-left"/></div>
               <div class="col"><input type="submit" value="Ambil" name="ambil" class="col-8 btn btn-outline-success btn-sm float-right"/></div>
             </div>
           </div>
