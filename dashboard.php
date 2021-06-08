@@ -200,7 +200,9 @@ require 'backend/asrsHandler.php';
     <!--Control Panel-->
     <h1 class="controlpage">CONTROL PAGE</h1>
 		<!--div angka-->
+    <div class="row justify-content-center">
 		<?php require 'backend/tablefetch.php'?>
+      </div>
 		<!--akhir div-->
 	
     <!--Akhir Control Panel-->
