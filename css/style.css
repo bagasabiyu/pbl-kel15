@@ -914,5 +914,9 @@ a:focus {
 .footer_section p a {
   color: inherit;
 }
+video {
+  max-width: 100%;
+  height: auto;
+}
 
 /*# sourceMappingURL=style.css.map */
