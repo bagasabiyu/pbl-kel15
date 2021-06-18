@@ -23,7 +23,7 @@ if($err == 0)
 	$query = "UPDATE rak SET status = '$stat' WHERE adress = '$add'";
 	mysqli_query($conn, $query);
 }
-
+//input ke tabel log
 if (isset($_POST['inputAdress'])){
 	$query = "SELECT * FROM log WHERE id = '1'";
 	$run = mysqli_query($conn, $query);
@@ -31,7 +31,7 @@ if (isset($_POST['inputAdress'])){
 		$query = "UPDATE log SET adress = '$add', status = '$stat' WHERE id = '1'";
 		$run = mysqli_query($conn, $query);
 	}else{
-		$query = "INSERT INTO log (adress ,status) VALUES ('$add' ,'$stat')";
+		$query = "INSERT INTO log (adress ,status) VALUES (DEFAULT,'$add' ,'$stat')";
 		$run = mysqli_query($conn, $query);
 	}
 }
