@@ -20,9 +20,20 @@ if(isset($_POST['ambil']))
 
 if($err == 0)
 {
-	//echo'query';
 	$query = "UPDATE rak SET status = '$stat' WHERE adress = '$add'";
 	mysqli_query($conn, $query);
+}
+
+if (isset($_POST['inputAdress'])){
+	$query = "SELECT * FROM log WHERE id = '1'";
+	$run = mysqli_query($conn, $query);
+	if(mysqli_num_rows($run) > 0){
+		$query = "UPDATE log SET adress = '$add', status = '$stat' WHERE id = '1'";
+		$run = mysqli_query($conn, $query);
+	}else{
+		$query = "INSERT INTO log (adress ,status) VALUES ('$add' ,'$stat')";
+		$run = mysqli_query($conn, $query);
+	}
 }
 
 ?>
