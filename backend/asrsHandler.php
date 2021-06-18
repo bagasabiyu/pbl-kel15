@@ -31,7 +31,7 @@ if (isset($_POST['inputAdress'])){
 		$query = "UPDATE log SET adress = '$add', status = '$stat' WHERE id = '1'";
 		$run = mysqli_query($conn, $query);
 	}else{
-		$query = "INSERT INTO log (adress ,status) VALUES (DEFAULT,'$add' ,'$stat')";
+		$queryg = "INSERT INTO log (id, adress, status) VALUES (DEFAULT,'$add' ,'$stat')";
 		$run = mysqli_query($conn, $query);
 	}
 }
