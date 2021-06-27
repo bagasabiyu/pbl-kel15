@@ -41,11 +41,11 @@ if(isset($_POST['inputAdress'])){
 	
 	if($stat == 1){
 		/*simpan || kiri bawahDikit kanan atasDikit*/
-		$keBarang = "190";
+		$keBarang = "8190";
 	}
 	if($stat == 0){
 		/*ambil || bawahDikit kiri atasDikit kanan*/
-		$keBarang = "180";
+		$keBarang = "1809";
 	}
 	
 	if($add == 1){$alamat = "36".$keBarang."72";}
@@ -56,9 +56,9 @@ if(isset($_POST['inputAdress'])){
 	if($add == 5){$alamat = "3566".$keBarang."7742";}
 	if($add == 6){$alamat = "35566".$keBarang."77442";}
 
-	if($add == 7){$alamat = "3666".$keBarang."7772";}
-	if($add == 8){$alamat = "35666".$keBarang."77742";}
-	if($add == 9){$alamat = "355666".$keBarang."777442";}
+	//if($add == 7){$alamat = "3666".$keBarang."7772";}
+	//if($add == 8){$alamat = "35666".$keBarang."77742";}
+	//if($add == 9){$alamat = "355666".$keBarang."777442";}
 	
 	$alamat;
 	
