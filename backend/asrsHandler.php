@@ -25,6 +25,7 @@ if($err == 0)
 }
 
 //-------pembagian alamat
+$alamat;
 if(isset($_POST['inputAdress'])){
 	
 	$add = $_POST['inputAdress'];
@@ -56,11 +57,25 @@ if(isset($_POST['inputAdress'])){
 	if($add == 5){$alamat = "3566".$keBarang."7742";}
 	if($add == 6){$alamat = "35566".$keBarang."77442";}
 
-	//if($add == 7){$alamat = "3666".$keBarang."7772";}
-	//if($add == 8){$alamat = "35666".$keBarang."77742";}
-	//if($add == 9){$alamat = "355666".$keBarang."777442";}
+	if($add == 7){$alamat = "3666".$keBarang."7772";}
+	if($add == 8){$alamat = "35666".$keBarang."77742";}
+	if($add == 9){$alamat = "355666".$keBarang."777442";}
 	
-	$alamat;
+	if($add == 10){$alamat = $add;}
+	if($add == 11){$alamat = $add;}
+	if($add == 12){$alamat = $add;}
+	
+	if($add == 13){$alamat = $add;}
+	if($add == 14){$alamat = $add;}
+	if($add == 15){$alamat = "3";}
+	
+	if($add == 16){$alamat = "2";}
+	if($add == 17){$alamat = $add;}
+	if($add == 18){$alamat = $add;}
+	
+	if($add == 19){$alamat = $add;}
+	if($add == 20){$alamat = $add;}
+	
 	
 	//input tabel ke log
 	
