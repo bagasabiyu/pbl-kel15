@@ -25,6 +25,7 @@ if($err == 0)
 }
 
 //-------pembagian alamat
+
 $alamat;
 if(isset($_POST['inputAdress'])){
 	
@@ -42,24 +43,35 @@ if(isset($_POST['inputAdress'])){
 	
 	if($stat == 1){
 		/*simpan || kiri bawahDikit kanan atasDikit*/
-		$keBarang = "8190";
+		$naikTurun = "190";
 	}
 	if($stat == 0){
 		/*ambil || bawahDikit kiri atasDikit kanan*/
-		$keBarang = "1809";
+		$naikTurunDikit = "180";
 	}
 	
-	if($add == 1){$alamat = "36".$keBarang."72";}
-	if($add == 2){$alamat = "356".$keBarang."742";}
-	if($add == 3){$alamat = "3556".$keBarang."7442";}
+	//simpan
+	if($add == 1 && $stat == 1){$alamat = "86".$naikTurun."7";}
+	if($add == 2 && $stat == 1){$alamat = "586".$naikTurun."74";}
+	if($add == 3 && $stat == 1){$alamat = "5586".$naikTurun."744";}
 
-	if($add == 4){$alamat = "366".$keBarang."772";}
-	if($add == 5){$alamat = "3566".$keBarang."7742";}
-	if($add == 6){$alamat = "35566".$keBarang."77442";}
+	if($add == 4 && $stat == 1){$alamat = "866".$naikTurun."77";}
+	if($add == 5 && $stat == 1){$alamat = "5866".$naikTurun."774";}
+	if($add == 6 && $stat == 1){$alamat = "55866".$naikTurun."7744";}
 
-	if($add == 7){$alamat = "3666".$keBarang."7772";}
-	if($add == 8){$alamat = "35666".$keBarang."77742";}
-	if($add == 9){$alamat = "355666".$keBarang."777442";}
+	//ambil
+	if($add == 1 && $stat == 0){$alamat = "6".$naikTurunDikit."79";}
+	if($add == 2 && $stat == 0){$alamat = "56".$naikTurunDikit."794";}
+	if($add == 3 && $stat == 0){$alamat = "556".$naikTurunDikit."7944";}
+
+	if($add == 4 && $stat == 0){$alamat = "66".$naikTurunDikit."779";}
+	if($add == 5 && $stat == 0){$alamat = "566".$naikTurunDikit."7794";}
+	if($add == 6 && $stat == 0){$alamat = "5566".$naikTurunDikit."77944";}
+	
+	//misc
+	if($add == 7){$alamat = $add;}
+	if($add == 8){$alamat = $add;}
+	if($add == 9){$alamat = $add;}
 	
 	if($add == 10){$alamat = $add;}
 	if($add == 11){$alamat = $add;}
