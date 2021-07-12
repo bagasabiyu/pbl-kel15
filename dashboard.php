@@ -165,7 +165,7 @@ require 'backend/asrsHandler.php';
 
     </style>
 
-    <title>Kelompok15</title>
+    <title>Kelompok13</title>
   </head>
   <body>
 
@@ -177,7 +177,7 @@ require 'backend/asrsHandler.php';
         <nav class="navbar navbar-expand-lg custom_nav-container ">
           <a class="navbar-brand" href="index.html">
             <span>
-             Kelompok 15
+             Kelompok 13
             </span>
           </a>
 
